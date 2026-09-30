@@ -22,7 +22,7 @@ Or add it manually to `phpunit.xml`:
 
 ```xml
 <extensions>
-    <bootstrap class="ExplainLint\PHPUnit\ExplainLintExtension">
+    <bootstrap class="Jeytekdev\ExplainLint\PHPUnit\ExplainLintExtension">
         <parameter name="config" value="explain-lint.php"/>
     </bootstrap>
 </extensions>
@@ -88,7 +88,7 @@ Two ways, both in `explain-lint.php`, both require a non-empty reason:
 If you'd rather assert explicitly inside a specific test instead of relying on suite-wide enforcement (or you're on a PHPUnit version predating the Extension/Event API), use the testing trait:
 
 ```php
-use ExplainLint\Laravel\Testing\ExplainLintTesting;
+use Jeytekdev\ExplainLint\Laravel\Testing\ExplainLintTesting;
 
 final class CheckoutTest extends TestCase
 {

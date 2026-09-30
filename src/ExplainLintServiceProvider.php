@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ExplainLint\Laravel;
+namespace Jeytekdev\ExplainLint\Laravel;
 
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\ServiceProvider;

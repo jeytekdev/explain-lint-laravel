@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace ExplainLint\Laravel\Testing;
+namespace Jeytekdev\ExplainLint\Laravel\Testing;
 
-use ExplainLint\Adapter\MySqlAdapter;
-use ExplainLint\Adapter\PostgresAdapter;
-use ExplainLint\Adapter\SqliteNoopAdapter;
-use ExplainLint\Config\ConfigLoader;
-use ExplainLint\Engine\ExplainRunner;
-use ExplainLint\Fingerprint\SqlFingerprint;
-use ExplainLint\Recorder\QueryLedger;
-use ExplainLint\Recorder\QueryRecorder;
-use ExplainLint\Rules\RuleEngine;
-use ExplainLint\Severity;
-use ExplainLint\Violation;
+use Jeytekdev\ExplainLint\Adapter\MySqlAdapter;
+use Jeytekdev\ExplainLint\Adapter\PostgresAdapter;
+use Jeytekdev\ExplainLint\Adapter\SqliteNoopAdapter;
+use Jeytekdev\ExplainLint\Config\ConfigLoader;
+use Jeytekdev\ExplainLint\Engine\ExplainRunner;
+use Jeytekdev\ExplainLint\Fingerprint\SqlFingerprint;
+use Jeytekdev\ExplainLint\Recorder\QueryLedger;
+use Jeytekdev\ExplainLint\Recorder\QueryRecorder;
+use Jeytekdev\ExplainLint\Rules\RuleEngine;
+use Jeytekdev\ExplainLint\Severity;
+use Jeytekdev\ExplainLint\Violation;
 
 /**
  * Optional per-test alternative to the suite-wide PHPUnit extension: call

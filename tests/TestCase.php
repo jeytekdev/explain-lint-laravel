@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ExplainLint\Laravel\Tests;
+namespace Jeytekdev\ExplainLint\Laravel\Tests;
 
-use ExplainLint\Laravel\ExplainLintServiceProvider;
+use Jeytekdev\ExplainLint\Laravel\ExplainLintServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase

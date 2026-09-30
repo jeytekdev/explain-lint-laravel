@@ -23,7 +23,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "jeytekdev/explain-lint": "^1.0",
+        "jeytekdev/explain-lint": "^2.0",
         "illuminate/database": "^10.0 || ^11.0 || ^12.0",
         "illuminate/support": "^10.0 || ^11.0 || ^12.0"
     },
@@ -33,22 +33,22 @@
     },
     "autoload": {
         "psr-4": {
-            "ExplainLint\\Laravel\\": "src/"
+            "Jeytekdev\\ExplainLint\\Laravel\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ExplainLint\\Laravel\\Tests\\": "tests/"
+            "Jeytekdev\\ExplainLint\\Laravel\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ExplainLint\\Laravel\\ExplainLintServiceProvider"
+                "Jeytekdev\\ExplainLint\\Laravel\\ExplainLintServiceProvider"
             ]
         },
         "branch-alias": {
-            "dev-master": "1.x-dev"
+            "dev-master": "2.x-dev"
         }
     },
     "minimum-stability": "stable",

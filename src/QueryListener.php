@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ExplainLint\Laravel;
+namespace Jeytekdev\ExplainLint\Laravel;
 
-use ExplainLint\Recorder\CapturedQuery;
-use ExplainLint\Recorder\QueryRecorder;
+use Jeytekdev\ExplainLint\Recorder\CapturedQuery;
+use Jeytekdev\ExplainLint\Recorder\QueryRecorder;
 use Illuminate\Database\Events\QueryExecuted;
 
 final class QueryListener

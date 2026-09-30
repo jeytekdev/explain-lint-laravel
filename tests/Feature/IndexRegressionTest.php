@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ExplainLint\Laravel\Tests\Feature;
+namespace Jeytekdev\ExplainLint\Laravel\Tests\Feature;
 
-use ExplainLint\Laravel\Tests\TestCase;
-use ExplainLint\Laravel\Testing\ExplainLintTesting;
+use Jeytekdev\ExplainLint\Laravel\Tests\TestCase;
+use Jeytekdev\ExplainLint\Laravel\Testing\ExplainLintTesting;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use PHPUnit\Framework\Attributes\Test;
