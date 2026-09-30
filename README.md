@@ -1,6 +1,6 @@
 # jeytekdev/explain-lint-laravel
 
-Laravel bridge for [jeytekdev/explain-lint](../core/README.md) — re-runs `EXPLAIN` against every query your test suite executes, and fails the build on full table scans, lost indexes, filesort and temporary tables.
+Laravel bridge for [jeytekdev/explain-lint](https://github.com/jeytekdev/explain-lint/blob/master/packages/core/README.md) — re-runs `EXPLAIN` against every query your test suite executes, and fails the build on full table scans, lost indexes, filesort and temporary tables.
 
 ## Install (2 minutes)
 
@@ -114,7 +114,7 @@ doesn't bootstrap PHPUnit's native extension system. `DB::listen()` will
 still capture every query, but nothing will ever be analyzed or printed:
 no error, no warning, just a report that never appears.
 
-Install [`jeytekdev/explain-lint-codeception`](../codeception/README.md) too,
+Install [`jeytekdev/explain-lint-codeception`](https://github.com/jeytekdev/explain-lint/blob/master/packages/codeception/README.md) too,
 and register it in `codeception.yml` instead of `phpunit.xml`. Use
 `explain-lint:install --config-only` (not the plain form) to generate
 `explain-lint.php` without also wiring `phpunit.xml`, since Codeception never
