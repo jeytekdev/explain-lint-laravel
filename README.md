@@ -103,6 +103,23 @@ final class CheckoutTest extends TestCase
 }
 ```
 
+## Running under Codeception
+
+This package only handles capture (`DB::listen()`) — the report step is
+core's PHPUnit `<extensions>` mechanism, registered via `phpunit.xml`.
+
+**If your suite runs via `vendor/bin/codecept run` instead of
+`vendor/bin/phpunit`/`pest`, that mechanism never fires** — Codeception 5
+doesn't bootstrap PHPUnit's native extension system. `DB::listen()` will
+still capture every query, but nothing will ever be analyzed or printed:
+no error, no warning, just a report that never appears.
+
+Install [`jeytekdev/explain-lint-codeception`](../codeception/README.md) too,
+and register it in `codeception.yml` instead of `phpunit.xml`. Use
+`explain-lint:install --config-only` (not the plain form) to generate
+`explain-lint.php` without also wiring `phpunit.xml`, since Codeception never
+reads that file.
+
 ## CI
 
 Relying solely on the in-process `exit(1)` from the PHPUnit run is a single point of failure if anything in your pipeline swallows PHPUnit's exit code — run the check as a separate second step:
